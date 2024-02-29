@@ -11,17 +11,18 @@ import androidx.core.content.ContextCompat
 import android.Manifest
 import android.app.Dialog
 import androidx.activity.result.contract.ActivityResultContracts
-import com.google.android.gms.location.LocationServices
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.LatLng
 import android.location.Geocoder
 import android.location.Location
 import android.view.Window
 import android.widget.TextView
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
 class MapsFragment : Fragment() {
+
     private lateinit var geocoder: Geocoder
 
     private val requestLocationPermissionLauncher =
